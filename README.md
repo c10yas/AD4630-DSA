@@ -1,4 +1,14 @@
-# BBB-AD4630
+# AD4630-DSA
+
+This project consists of 3 parts
+- hw/
+  - PCB files for the main board that contains the ADC, power supplies, isolators, and connection points to the Beaglebone Black
+- sw/
+  - pru/
+    - PRU code that runs on the BBB, generating the correct control signals and reading the data into DRAM
+  - arm/
+    - ARM code to save data to file, generate real-time FFTs, etc, and host a web interface to control the whole system
+
 Code to run on a Beaglebone to collect data from the AD4630-24
 
 This repository contains code to do the following - 
